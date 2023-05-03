@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="10" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="320.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="edu.virginia.cs.hwseven.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label text="SEARCH CLASSES" style="-fx-font-weight: bold; -fx-font-size: 20px; -fx-font-family: Arial;" />
+
+    <TextField promptText="SEARCH CLASSES" prefHeight="50.0" prefWidth="400.0" style="-fx-font-size: 20px; -fx-background-radius: 50px; -fx-focus-color: grey;"/>
+
+    <Region prefHeight="10.0"/>
+
+    <HBox>
+        <Button text="VIEW REVIEWS" onAction="#goToviewReviews" prefHeight="50.0" prefWidth="240.0" style="-fx-font-size: 20px; -fx-background-radius: 50px; -fx-padding: 10px 20px; -fx-background-color: cornflowerblue; -fx-text-fill: white;"/>
+        <Region prefWidth="20.0"/>
+        <Button text="LEAVE REVIEW" prefHeight="50.0" prefWidth="240.0" style="-fx-font-size: 20px; -fx-background-radius: 50px; -fx-padding: 10px 20px; -fx-background-color: cornflowerblue; -fx-text-fill: white;"/>
+    </HBox>
+
+    <Region prefHeight="10.0"/>
+
+    <VBox prefHeight="520.0" alignment="TOP_CENTER">
+        <Label text="Leave a Review" style="-fx-font-weight: bold; -fx-font-size: 20px; -fx-font-family: Arial;" />
+        <Region prefHeight="5.0"/>
+        <TextField fx:id="courseReview" promptText="Leave a Review" alignment="TOP_LEFT" prefHeight="400.0" prefWidth="400.0" style="-fx-font-size: 20px; -fx-background-radius: 20px; -fx-focus-color: grey;"/>
+
+        <Region prefHeight="10.0"/>
+
+        <HBox alignment="CENTER">
+            <VBox alignment="TOP_CENTER">
+                <Label text="Leave a rating 1-5" style="-fx-font-weight: bold; -fx-font-size: 20px; -fx-font-family: Arial;" />
+                <Region prefHeight="5.0"/>
+                <TextField fx:id="courseRating" promptText="Leave a rating 1-5" alignment="CENTER" prefHeight="10.0" prefWidth="240.0" style="-fx-font-size: 20px; -fx-padding: 10px 0px; -fx-background-radius: 20px; -fx-focus-color: grey;"/>
+            </VBox>
+
+            <Region prefWidth="40.0"/>
+
+            <VBox alignment="TOP_CENTER">
+                <Label text="SUBMIT REVIEW" style="-fx-font-weight: bold; -fx-font-size: 20px; -fx-font-family: Arial;" />
+                <Region prefHeight="5.0"/>
+                <Button text="SUBMIT REVIEW" onAction="#submitReview" alignment="CENTER" prefHeight="10.0" prefWidth="240.0" style="-fx-font-size: 20px; -fx-background-radius: 20px; -fx-padding: 10px 20px; -fx-background-color: cornflowerblue; -fx-text-fill: white;"/>
+            </VBox>
+        </HBox>
+    </VBox>
+</VBox>
